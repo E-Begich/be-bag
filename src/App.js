@@ -4,8 +4,9 @@ import Footer from './Components/Footer';
 import Home from './Components/Home';
 import About from './Components/About';
 import Product from './Components/Product';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Contact from './Components/Contact';
+// 29:40
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+<Footer/>
     </>
   );
 }

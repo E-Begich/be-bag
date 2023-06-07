@@ -4,8 +4,8 @@ const Login = () => {
     return (
         <>
             {/* <!-- Button trigger modal --> */}
-            <button type="button" className="btn btn-outline-dark  fa-solid" data-bs-toggle="modal" data-bs-target="#loginModal">
-                <i className="fa fa-sign-in me-2"></i> Login
+            <button type="button" className="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <i className="fa fa-sign-in me-2"></i>Login
             </button>
 
             {/* <!-- Modal --> */}
@@ -27,7 +27,6 @@ const Login = () => {
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
