@@ -11,7 +11,7 @@ const Product = () => {
                 <div className="card-body text-center">
                     <h5 className="card-title">{item.title}</h5>
                     <p className="lead">{item.price}€</p>
-                    <NavLink to={`/products/${item.id}`} className="btn btn-outline-dark"><span className="fa fa-credit-card me-2" ></span>Buy Now</NavLink>
+                    <NavLink to={`/product/${item.id}`} className="btn btn-outline-dark"><span className="fa fa-credit-card me-2" ></span>Buy Now</NavLink>
                 </div>
 </div>
             );
@@ -36,4 +36,4 @@ return (
 )
 }
 
-export default Product
+export default Product;

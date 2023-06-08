@@ -6,6 +6,9 @@ import About from './Components/About';
 import Product from './Components/Product';
 import { Route, Routes } from 'react-router-dom';
 import Contact from './Components/Contact';
+import ProductDetail from './Components/ProductDetail';
+
+
 // 29:40
 
 function App() {
@@ -15,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/product' element={<Product />} />
+        <Route path='/product/:id' element={<ProductDetail />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
