@@ -1,12 +1,30 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import DATA from '../Data';
+import { useState } from 'react';
+import { useDispatch } from "react-redux";
+import { addItem, delItem } from "../redux/actions/index";
 
 const ProductDetail = () => {
+    const [cartBtn, setCartBtn] = useState("Add to cart");
+
     const proid = useParams();
-    const proDetail = DATA.filter( x => x.id == proid.id)
+    const proDetail = DATA.filter(x => x.id == proid.id)
     const product = proDetail[0];
     console.log(product);
+
+    const dispatch = useDispatch();
+
+    const handleCart = () => {
+        if (cartBtn === "Add to cart") {
+            dispatch(addItem(product));
+            setCartBtn("Remove from cart");
+        } else {
+            dispatch(delItem(product));
+            setCartBtn("Add to cart");
+        }
+
+    }
     return (
         <>
             <div className="container my-5 py-3">
@@ -19,7 +37,7 @@ const ProductDetail = () => {
                         <hr />
                         <h2 className="my-4">{product.price} €</h2>
                         <p className="lead">{product.desc} </p>
-                        <button className="btn btn-outline-dark"><span className="fa fa-shopping-cart me-1"></span>Add to cart</button>
+                        <button onClick={() => handleCart(product)} className="btn btn-outline-dark"><span className="fa fa-shopping-cart me-1"></span>{cartBtn}</button>
                     </div>
                 </div>
             </div>

@@ -7,9 +7,11 @@ import Product from './Components/Product';
 import { Route, Routes } from 'react-router-dom';
 import Contact from './Components/Contact';
 import ProductDetail from './Components/ProductDetail';
+import Cart from './Components/Cart';
+import Checkout from './Components/Checkout';
 
 
-// 29:40
+// 
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/product' element={<Product />} />
         <Route path='/product/:id' element={<ProductDetail />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/checkout' element={<Checkout/>} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
