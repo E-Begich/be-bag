@@ -30,6 +30,7 @@ const Home = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+      <p className='lead text-center py-4 my-6'>This is test site. Please do not order for now.</p>
       <Product/>
     </div>
   )
