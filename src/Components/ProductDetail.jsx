@@ -35,8 +35,8 @@ const ProductDetail = () => {
                     <div className="col-md-6 d-flex flex-column justify-content-center">
                         <h1 className="display-5 fw-bold">{product.title}</h1>
                         <hr />
-                        <h2 className="my-4">{product.price} €</h2>
                         <p className="lead">{product.desc} </p>
+                        <h2 className="my-4">{product.price} €</h2>
                         <button onClick={() => handleCart(product)} className="btn btn-outline-dark"><span className="fa fa-shopping-cart me-1"></span>{cartBtn}</button>
                     </div>
                 </div>
