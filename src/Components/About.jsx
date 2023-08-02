@@ -14,7 +14,7 @@ const About = () => {
             <NavLink to="/contact" className="btn btn-outline-dark px-3">Contact us</NavLink>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
-            <img src={ process.env.PUBLIC_URL+ "assets/images/sabrina.jpg"} alt="about us" height="600px" width="500px" />
+            <img src={ process.env.PUBLIC_URL+ "/assets/images/sabrina.jpg"} alt="about us" height="600px" width="500px" />
           </div>
         </div>
       </div>
