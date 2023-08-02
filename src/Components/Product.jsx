@@ -11,7 +11,7 @@ const Product = () => {
                 <div className="card-body text-center">
                     <h5 className="card-title">{item.title}</h5>
                     <p className="lead">{item.price}€</p>
-                    <NavLink to={`/product/${item.id}`} className="btn btn-outline-dark"><span className="fa-regular fa-magnifying-glass " ></span>Look the product</NavLink>
+                    <NavLink to={process.env.REACT_APP_FRONTEND_URL + `/product/${item.id}`} className="btn btn-outline-dark"><span className="fa-regular fa-magnifying-glass " ></span>Look the product</NavLink>
                 </div>
 </div>
             );
