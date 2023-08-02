@@ -12,7 +12,7 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col-md-5 d-flex justify-content-center">
-            <img src="/assets/contactus.gif" alt="contact us" height="500px" width="600px" />
+            <img src={process.env.PUBLIC_URL+ "/assets/contactus.gif"} alt="contact us" height="500px" width="600px" />
           </div>
           <div className="col-md-6">
             <form>
